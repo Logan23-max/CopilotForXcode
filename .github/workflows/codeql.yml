@@ -1,4 +1,13 @@
-name: "CodeQL Advanced"
+const swipe = async (userId, direction) => {
+  await fetch("YOUR_SUPABASE_FUNCTION_URL/swipe", {
+    method: "POST",
+    body: JSON.stringify({
+      swiper: user.id,
+      swiped: userId,
+      direction
+    })
+  })
+}name: "CodeQL Advanced"
 
 on:
   push:
